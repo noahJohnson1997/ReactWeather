@@ -1,0 +1,43 @@
+.MainNav {
+  &-Container {
+    display: flex;
+    justify-content: space-around;
+    background-color: $navy;
+    width: 100%;
+    line-height: 75px;
+  }
+  &-Child {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    text-decoration: none;
+    color: $orange;
+    transition: color 0.3s ease;
+    &:active,
+    &:hover {
+      color: $lighterBlue;
+    }
+  }
+  width: 50%;
+  list-style: none;
+  height: 75px;
+  line-height: 75px;
+  display: flex;
+  justify-content: space-around;
+  background-color: $navy;
+}
+
+.Logout-Button {
+  height: 40px;
+  width: 100px;
+  border: none;
+  border-radius: 20px;
+  background-color: $orange;
+  color: $navy;
+  transition: color 0.3s ease, transform 0.3s ease;
+  &:active,
+  &:hover {
+    color: $lighterBlue;
+    transform: scale(1.1);
+  }
+}

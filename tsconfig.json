@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "CommonJS",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": ["./types", "jquery"],
+    "lib": ["dom", "ESNext"],
+    "strict": true,
+    "sourceMap": true,
+    "target": "ES5"
+  },
+  "exclude": ["node_modules"]
+}

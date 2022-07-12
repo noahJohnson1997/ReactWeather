@@ -1,0 +1,48 @@
+.Login-Container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $yellow;
+  .Input {
+    &-Container {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem;
+    }
+    &-Label {
+      padding-bottom: 0.2rem;
+      color: $navy;
+    }
+    &-Field {
+      height: 40px;
+      width: 250px;
+      color: $navy;
+      background-color: $yellow;
+      border: 2px solid $navy;
+      border-radius: 20px;
+      padding: 1rem;
+    }
+    &-Button-Container {
+      display: flex;
+      justify-content: space-between;
+      width: 250px;
+    }
+  }
+}
+.LoginButton {
+  height: 40px;
+  width: 100px;
+  border: none;
+  border-radius: 20px;
+  background-color: $navy;
+  color: $orange;
+  transition: color 0.3s ease, transform 0.3s ease;
+  &:active,
+  &:hover {
+    color: $lighterBlue;
+    transform: scale(1.1);
+  }
+}

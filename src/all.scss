@@ -1,0 +1,13 @@
+//global
+@import "./global.scss";
+@import "./variables.scss";
+
+//Components
+@import "./components/MainNav/MainNav.scss";
+@import "./components/Footer/Footer.scss";
+@import "./components/Login/Login.scss";
+@import "./components/Signup/Signup.scss";
+
+//Pages
+@import "./pages/Home/Home.scss";
+@import "./pages/LocalWeather/LocalWeather.scss";

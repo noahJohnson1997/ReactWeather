@@ -1,0 +1,37 @@
+.Footer {
+  height: 75px;
+  margin-top: -75px;
+  color: $orange;
+  display: flex;
+  justify-content: center;
+  &-Container {
+    width: 100%;
+    background-color: $navy;
+  }
+  &-Items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+  }
+  &-Item {
+    padding: 0.2rem;
+    a {
+      text-decoration: none;
+      color: $lightBlue;
+      transition: color 0.3s ease;
+      font-size: 1.3rem;
+      &:active,
+      &:hover {
+        color: $lighterBlue;
+      }
+    }
+  }
+  &-SubItems {
+    padding: 0.2rem;
+    width: 200px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+}
