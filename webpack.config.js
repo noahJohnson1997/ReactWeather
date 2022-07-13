@@ -1,6 +1,8 @@
 const prod = process.env.NODE_ENV === "production";
+var webpack = require("webpack");
 
 module.exports = {
+  devtool: "cheap-module-source-map",
   mode: prod ? "production" : "development",
   entry: "./src/index.tsx",
   devtool: "inline-source-map",
@@ -13,7 +15,7 @@ module.exports = {
       {
         test: /\.tsx$/,
         use: "ts-loader",
-        exclude: /node_modules/,
+        exclude: /(node_modules|bower_components)/,
       },
       {
         test: /\.css$/,
@@ -32,5 +34,8 @@ module.exports = {
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".json", ".jsx"],
+  },
+  optimization: {
+    minimize: true,
   },
 };
