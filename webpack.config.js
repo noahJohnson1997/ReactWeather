@@ -37,5 +37,9 @@ module.exports = {
   },
   optimization: {
     minimize: true,
+    mangleExports: true,
+    mergeDuplicateChunks: true,
+    concatenateModules: true,
+    chunkIds: "deterministic",
   },
 };
